@@ -1,6 +1,6 @@
 <div>
 
-  <h2>hello-goodbye-angular</h2>
+  <h2>{{title}}</h2>
 
   <p>
     Input:<br />
@@ -27,5 +27,9 @@
     <button [disabled]=(!inputText) (click)="handleMessage()">Show Input Message</button>
   </p>
 
+  <p>
+    <button [disabled]=(!inputText) (click)="handleClear()">Clear Input Message</button>
+  </p>
+  
 </div>
 

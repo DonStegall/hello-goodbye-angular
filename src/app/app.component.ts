@@ -10,7 +10,7 @@ export class AppComponent {
 
   title = 'hello-goodbye-angular';
 
-  private inputText: string;
+  private inputText: string = null;
 
   public handleHello() {
     this.inputText = 'Hello';
@@ -30,6 +30,10 @@ export class AppComponent {
 
   public handleMessage() {
     alert(this.inputText);
+  }
+
+  public handleClear() {
+    this.inputText = null;
   }
 
 }
